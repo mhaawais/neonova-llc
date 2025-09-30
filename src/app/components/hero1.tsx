@@ -1,28 +1,37 @@
 // app/components/Landing.tsx
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { useMemo } from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { useMemo } from "react";
 import {
-  FiArrowRight, FiPhone, FiBookOpen, FiGlobe, FiCpu, FiCloud,
-  FiCheckCircle, FiShield, FiZap, FiLayers, FiSmile
-} from 'react-icons/fi';
+  FiArrowRight,
+  FiPhone,
+  FiBookOpen,
+  FiGlobe,
+  FiCpu,
+  FiCloud,
+  FiCheckCircle,
+  FiShield,
+  FiZap,
+  FiLayers,
+  FiSmile,
+} from "react-icons/fi";
 
-const ACCENT = '#C6A15B'; // match your logo gold
+const ACCENT = "#C6A15B"; // match your logo gold
 
 export default function Landing() {
   const blobs = useMemo(
     () => [
-      'top-[-16%] left-[-12%] w-[34rem] h-[34rem]',
-      'bottom-[-18%] right-[-18%] w-[44rem] h-[44rem]',
+      "top-[-16%] left-[-12%] w-[34rem] h-[34rem]",
+      "bottom-[-18%] right-[-18%] w-[44rem] h-[44rem]",
     ],
     []
   );
 
   return (
     <main
-      style={{ ['--accent' as any]: ACCENT }}
+      style={{ ["--accent" as any]: ACCENT }}
       className="bg-neutral-950 text-neutral-100"
     >
       {/* ===== HERO ===== */}
@@ -30,7 +39,10 @@ export default function Landing() {
         {/* BG accents */}
         <div className="pointer-events-none absolute inset-0">
           {blobs.map((cls, i) => (
-            <div key={i} className={`absolute ${cls} rounded-full bg-[var(--accent)]/10 blur-3xl animate-pulse-slow`} />
+            <div
+              key={i}
+              className={`absolute ${cls} rounded-full bg-[var(--accent)]/10 blur-3xl animate-pulse-slow`}
+            />
           ))}
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--accent)]/40 to-transparent" />
         </div>
@@ -53,7 +65,9 @@ export default function Landing() {
               that engage, inspire, and scale.
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-base sm:text-lg md:text-xl text-neutral-300">
-              Strategy, design, and engineering for E-books & Publications, Digital Marketing, Software Development, and IT Solutions — crafted for measurable growth.
+              Strategy, design, and engineering for E-books & Publications,
+              Digital Marketing, Software Development, and IT Solutions —
+              crafted for measurable growth.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -81,13 +95,14 @@ export default function Landing() {
 
           {/* Hero image */}
           <div className="mt-10">
-            <div className="relative mx-auto aspect-[21/9] w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
+            <div className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
               <Image
-                src="/assets/images/main-image3.png" // replace
+                src="/assets/images/main-image5.avif" // replace with your image source
                 alt="Showcase of Neonovallc work"
-                fill
+                width={1200} // set the desired width
+                height={600} // set the desired height
                 sizes="(max-width: 1024px) 100vw, 1200px"
-                className="object-cover transition-transform duration-[2000ms] ease-out hover:scale-[1.03]"
+                className="object-cover transition-transform duration-[2000ms] ease-out"
                 priority
               />
               <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/5 rounded-3xl" />
@@ -96,13 +111,26 @@ export default function Landing() {
         </div>
 
         <style jsx>{`
-          .animate-underline { animation: shimmer 2.6s ease-in-out infinite; transform-origin: center; }
-          @keyframes shimmer { 0%,100% { transform: scaleX(0.2); opacity:.5 } 50% { transform: scaleX(1); opacity:1 } }
+          .animate-underline {
+            animation: shimmer 2.6s ease-in-out infinite;
+            transform-origin: center;
+          }
+          @keyframes shimmer {
+            0%,
+            100% {
+              transform: scaleX(0.2);
+              opacity: 0.5;
+            }
+            50% {
+              transform: scaleX(1);
+              opacity: 1;
+            }
+          }
         `}</style>
       </section>
 
       {/* ===== TRUST STRIP ===== */}
-      <section className="border-y border-neutral-900/70 bg-neutral-950/80 py-6">
+      {/* <section className="border-y border-neutral-900/70 bg-neutral-950/80 py-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 items-center gap-6 opacity-80">
           {['brand-1','brand-2','brand-3','brand-4','brand-5','brand-6'].map((b) => (
             <div key={b} className="relative h-10">
@@ -110,14 +138,17 @@ export default function Landing() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ===== SERVICES ===== */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="mb-8 md:mb-12 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">What we do</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+            What we do
+          </h2>
           <p className="mt-3 text-neutral-300 max-w-2xl mx-auto">
-            Agile, customer-first solutions across content, marketing, software, and infrastructure.
+            Agile, customer-first solutions across content, marketing, software,
+            and infrastructure.
           </p>
         </div>
 
@@ -126,25 +157,25 @@ export default function Landing() {
             icon={<FiBookOpen />}
             title="E-books & Publications"
             desc="Authoring, editing, layout, and global distribution that bring stories to life."
-            img="/assets/images/services/ebooks.jpg"
+            img="/assets/images/ebooks.jpg"
           />
           <ServiceCard
             icon={<FiGlobe />}
             title="Digital Marketing"
             desc="SEO, content, and paid performance that compound attention into revenue."
-            img="/assets/images/services/marketing.jpg"
+            img="/assets/images/marketing.jpg"
           />
           <ServiceCard
             icon={<FiCpu />}
             title="Software Development"
             desc="From MVP to scale — clean code, modern stacks, and seamless UX."
-            img="/assets/images/services/software.jpg"
+            img="/assets/images/software.jpg"
           />
           <ServiceCard
             icon={<FiCloud />}
             title="IT Solutions"
             desc="Cloud, security, and infra that remove friction and grow with you."
-            img="/assets/images/services/it.jpg"
+            img="/assets/images/it.jpg"
           />
         </div>
       </section>
@@ -152,7 +183,9 @@ export default function Landing() {
       {/* ===== FEATURED WORK / GALLERY ===== */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14 md:pb-20">
         <div className="mb-8 md:mb-12 flex flex-col items-center text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Recent Highlights</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+            Recent Highlights
+          </h2>
           <p className="mt-3 text-neutral-300 max-w-2xl">
             A peek at launches and productions across industries.
           </p>
@@ -160,16 +193,24 @@ export default function Landing() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {[
-            {src:'/assets/images/work/work-1.jpg', title:'Publishing Suite'},
-            {src:'/assets/images/work/work-2.jpg', title:'E-commerce Revamp'},
-            {src:'/assets/images/work/work-3.jpg', title:'SaaS Dashboard'},
-            {src:'/assets/images/work/work-4.jpg', title:'Brand + Website'},
-            {src:'/assets/images/work/work-5.jpg', title:'Analytics Rollout'},
-            {src:'/assets/images/work/work-6.jpg', title:'Mobile Experience'},
+            { src: "/assets/images/work-1.avif", title: "Publishing Suite" },
+            { src: "/assets/images/work-2.jpg", title: "E-commerce Revamp" },
+            { src: "/assets/images/work-3.jpg", title: "SaaS Dashboard" },
+            { src: "/assets/images/work-4.jpg", title: "Brand + Website" },
+            { src: "/assets/images/work-5.jpg", title: "Analytics Rollout" },
+            { src: "/assets/images/work-6.jpg", title: "Mobile Experience" },
           ].map((w) => (
-            <figure key={w.src} className="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/40">
+            <figure
+              key={w.src}
+              className="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/40"
+            >
               <div className="relative aspect-[4/3] w-full">
-                <Image src={w.src} alt={w.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image
+                  src={w.src}
+                  alt={w.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
               </div>
               <figcaption className="flex items-center justify-between px-4 py-3">
                 <span className="text-sm font-semibold">{w.title}</span>
@@ -186,7 +227,7 @@ export default function Landing() {
           <div className="relative overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/50">
             <div className="relative aspect-[16/10]">
               <Image
-                src="/assets/images/process/collab.jpg" // replace
+                src="/assets/images/collab.avif" // replace
                 alt="Collaborative process"
                 fill
                 className="object-cover"
@@ -194,12 +235,22 @@ export default function Landing() {
             </div>
           </div>
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">A process designed for outcomes</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+              A process designed for outcomes
+            </h2>
             <ul className="mt-5 space-y-4 text-neutral-300">
-              <ProcessItem title="Discover" icon={<FiLayers />}>Workshops to clarify goals, users, and success metrics.</ProcessItem>
-              <ProcessItem title="Design" icon={<FiZap />}>Rapid iterations on UX/UI with feedback loops built-in.</ProcessItem>
-              <ProcessItem title="Build" icon={<FiCpu />}>Modern stacks, clean code, and performance budgets.</ProcessItem>
-              <ProcessItem title="Grow" icon={<FiSmile />}>Analytics, SEO, and marketing that compound results.</ProcessItem>
+              <ProcessItem title="Discover" icon={<FiLayers />}>
+                Workshops to clarify goals, users, and success metrics.
+              </ProcessItem>
+              <ProcessItem title="Design" icon={<FiZap />}>
+                Rapid iterations on UX/UI with feedback loops built-in.
+              </ProcessItem>
+              <ProcessItem title="Build" icon={<FiCpu />}>
+                Modern stacks, clean code, and performance budgets.
+              </ProcessItem>
+              <ProcessItem title="Grow" icon={<FiSmile />}>
+                Analytics, SEO, and marketing that compound results.
+              </ProcessItem>
             </ul>
           </div>
         </div>
@@ -220,20 +271,50 @@ export default function Landing() {
       {/* ===== TESTIMONIALS ===== */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14 md:pb-20">
         <div className="mb-8 md:mb-12 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">What clients say</h2>
-          <p className="mt-3 text-neutral-300">Real results, real relationships.</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+            What clients say
+          </h2>
+          <p className="mt-3 text-neutral-300">
+            Real results, real relationships.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {[
-            {avatar:'/assets/images/people/p1.jpg', name:'Amira K.', role:'Publisher', quote:'Their e-book pipeline took us from draft to worldwide distribution without friction.'},
-            {avatar:'/assets/images/people/p2.jpg', name:'Zane P.', role:'CMO', quote:'Campaigns finally aligned design, content, and data — the growth was obvious.'},
-            {avatar:'/assets/images/people/p3.jpg', name:'Lena R.', role:'Founder', quote:'Product shipped on time, fast, and stable. Great taste + engineering.'},
+            {
+              avatar: "/assets/images/p1.jpg",
+              name: "Amira K.",
+              role: "Publisher",
+              quote:
+                "Their e-book pipeline took us from draft to worldwide distribution without friction.",
+            },
+            {
+              avatar: "/assets/images/p2.jpg",
+              name: "Zane P.",
+              role: "CMO",
+              quote:
+                "Campaigns finally aligned design, content, and data — the growth was obvious.",
+            },
+            {
+              avatar: "/assets/images/p3.jpg",
+              name: "Lena R.",
+              role: "Founder",
+              quote:
+                "Product shipped on time, fast, and stable. Great taste + engineering.",
+            },
           ].map((t) => (
-            <blockquote key={t.name} className="group rounded-2xl border border-neutral-800 bg-neutral-900/60 p-5 hover:border-[var(--accent)]/50 transition">
+            <blockquote
+              key={t.name}
+              className="group rounded-2xl border border-neutral-800 bg-neutral-900/60 p-5 hover:border-[var(--accent)]/50 transition"
+            >
               <div className="flex items-center gap-3">
                 <div className="relative h-10 w-10 overflow-hidden rounded-full">
-                  <Image src={t.avatar} alt={`${t.name} avatar`} fill className="object-cover" />
+                  <Image
+                    src={t.avatar}
+                    alt={`${t.name} avatar`}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <div className="text-sm font-semibold">{t.name}</div>
@@ -249,18 +330,23 @@ export default function Landing() {
       {/* ===== FAQ ===== */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14 md:pb-20">
         <div className="mb-6 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">FAQs</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+            FAQs
+          </h2>
         </div>
 
         <div className="mx-auto grid max-w-3xl grid-cols-1 gap-3">
           <FAQ q="How soon can we start?">
-            We typically kick off within a week. Discovery workshops help us align on scope and outcomes.
+            We typically kick off within a week. Discovery workshops help us
+            align on scope and outcomes.
           </FAQ>
           <FAQ q="Do you work with existing brands/products?">
-            Absolutely. We audit, optimize, and extend what you have before proposing rebuilds.
+            Absolutely. We audit, optimize, and extend what you have before
+            proposing rebuilds.
           </FAQ>
           <FAQ q="What industries do you support?">
-            Publishing, SaaS, e-commerce, professional services, and education — among others.
+            Publishing, SaaS, e-commerce, professional services, and education —
+            among others.
           </FAQ>
         </div>
       </section>
@@ -273,14 +359,17 @@ export default function Landing() {
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
                 Ready to build something remarkable?
               </h3>
-              <p className="mt-1 text-neutral-300">Let’s align on goals and ship a plan within days.</p>
+              <p className="mt-1 text-neutral-300">
+                Let’s align on goals and ship a plan within days.
+              </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-3">
               <Link
                 href="/services"
                 className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--accent)] px-5 py-3 text-neutral-900 font-semibold transition hover:-translate-y-0.5 hover:shadow-[0_10px_35px_rgba(198,161,91,0.35)]"
               >
-                Explore Services <FiArrowRight className="transition-transform group-hover:translate-x-0.5" />
+                Explore Services{" "}
+                <FiArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
               <a
                 href="mailto:info@neonexusllc.com"
@@ -299,12 +388,25 @@ export default function Landing() {
 /* ===== subcomponents ===== */
 
 function ServiceCard({
-  icon, title, desc, img,
-}: { icon: React.ReactNode; title: string; desc: string; img: string }) {
+  icon,
+  title,
+  desc,
+  img,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+  img: string;
+}) {
   return (
     <div className="group relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/60 transition-all hover:-translate-y-0.5 hover:border-[var(--accent)]/50 hover:shadow-[0_20px_60px_rgba(198,161,91,0.12)]">
       <div className="relative aspect-[16/9] w-full">
-        <Image src={img} alt={title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+        <Image
+          src={img}
+          alt={title}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+        />
       </div>
       <div className="p-5">
         <div className="flex items-center gap-3">
@@ -313,14 +415,24 @@ function ServiceCard({
           </span>
           <h3 className="text-base sm:text-lg font-semibold">{title}</h3>
         </div>
-        <p className="mt-3 text-sm sm:text-[0.95rem] leading-relaxed text-neutral-300">{desc}</p>
+        <p className="mt-3 text-sm sm:text-[0.95rem] leading-relaxed text-neutral-300">
+          {desc}
+        </p>
         <div className="mt-4 h-[2px] w-8 rounded bg-[var(--accent)]/70 transition-all group-hover:w-16" />
       </div>
     </div>
   );
 }
 
-function ProcessItem({ title, children, icon }: { title: string; children: React.ReactNode; icon: React.ReactNode }) {
+function ProcessItem({
+  title,
+  children,
+  icon,
+}: {
+  title: string;
+  children: React.ReactNode;
+  icon: React.ReactNode;
+}) {
   return (
     <li className="flex items-start gap-3">
       <span className="mt-0.5 text-[var(--accent)]">{icon}</span>

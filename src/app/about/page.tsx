@@ -47,18 +47,21 @@ export default function About() {
 
           {/* Hero banner image */}
           <div className="mt-10">
-            <div className="relative mx-auto aspect-[21/9] w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
-              <Image
-                src="/assets/images/hero-about.jpg" // replace with an appropriate hero image
-                alt="Neonovallc company overview"
-                fill
-                sizes="(max-width: 1024px) 100vw, 1200px"
-                className="object-cover transition-transform duration-[2000ms] ease-out hover:scale-[1.03]"
-                priority
-              />
-              <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/5 rounded-3xl" />
-            </div>
-          </div>
+  <div className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
+    <Image
+      src="/assets/images/hero-about.jpg" // replace with an appropriate hero image
+      alt="Neonovallc company overview"
+      width={1200} // set the desired width
+      height={600} // set the desired height
+      sizes="(max-width: 1024px) 100vw, 1200px"
+      className="object-cover transition-transform duration-200 ease-out" // removed hover zoom
+      priority
+    />
+    <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/5 rounded-3xl" />
+  </div>
+</div>
+
+
         </div>
       </section>
 
@@ -82,7 +85,7 @@ export default function About() {
               description:
                 "Unlock boundless worlds with the turn of a page, where imagination knows no limits in digital display.",
               icon: <FiBookOpen />,
-              imgSrc: "/assets/images/services/ebooks.jpg",
+              imgSrc: "/assets/images/one.jpg",
               link: "/services/ebooks",
             },
             {
@@ -90,7 +93,7 @@ export default function About() {
               description:
                 "Navigate the digital landscape with strategic precision, where every click echoes a brand's vision.",
               icon: <FiGlobe />,
-              imgSrc: "/assets/images/services/marketing.jpg",
+              imgSrc: "/assets/images/two.jpg",
               link: "/services/marketing",
             },
             {
@@ -98,7 +101,7 @@ export default function About() {
               description:
                 "Transforming lines of code into seamless solutions, software development bridges imagination with execution.",
               icon: <FiCpu />,
-              imgSrc: "/assets/images/services/software.jpg",
+              imgSrc: "/assets/images/three.jpg",
               link: "/services/software",
             },
             {
@@ -106,7 +109,7 @@ export default function About() {
               description:
                 "Harnessing innovation to untangle complexity, IT solutions pave the path for streamlined efficiency.",
               icon: <FiCloud />,
-              imgSrc: "/assets/images/services/it.jpg",
+              imgSrc: "/assets/images/four.jpg",
               link: "/services/it",
             },
           ].map((service) => (

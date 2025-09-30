@@ -45,7 +45,7 @@ const Contact = () => {
     >
       {/* ===== Hero Section ===== */}
       <section className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-24 md:pb-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-8 md:pt-24 md:pb-12">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
               Get in Touch with{" "}
@@ -55,6 +55,31 @@ const Contact = () => {
               Whether you’re ready to build or just exploring options, we’re
               here to help you grow.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Contact Info Section ===== */}
+      <section className="bg-neutral-950 py-12 md:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+            Contact Information
+          </h3>
+          <p className="mt-4 text-neutral-300">We’re here to help!</p>
+
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-10">
+            <div className="flex items-center gap-3 text-neutral-400">
+              <FiPhone className="text-[var(--accent)]" />
+              <span>+1 (507) 556-1700</span>
+            </div>
+            <div className="flex items-center gap-3 text-neutral-400">
+              <FiMail className="text-[var(--accent)]" />
+              <span>info@neonexusllc.com</span>
+            </div>
+            <div className="flex items-center gap-3 text-neutral-400">
+              <FiMapPin className="text-[var(--accent)]" />
+              <span>5900 Balcones Drive, STE 100, Austin, TX, 78731</span>
+            </div>
           </div>
         </div>
       </section>
@@ -189,30 +214,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* ===== Contact Info Section ===== */}
-      <section className="bg-neutral-950 py-12 md:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
-            Contact Information
-          </h3>
-          <p className="mt-4 text-neutral-300">We’re here to help!</p>
-
-          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-10">
-            <div className="flex items-center gap-3 text-neutral-400">
-              <FiPhone className="text-[var(--accent)]" />
-              <span>+1 (507) 556-1700</span>
-            </div>
-            <div className="flex items-center gap-3 text-neutral-400">
-              <FiMail className="text-[var(--accent)]" />
-              <span>info@neonexusllc.com</span>
-            </div>
-            <div className="flex items-center gap-3 text-neutral-400">
-              <FiMapPin className="text-[var(--accent)]" />
-              <span>5900 Balcones Drive, STE 100, Austin, TX, 78731</span>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 };

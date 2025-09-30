@@ -26,32 +26,32 @@ const CARDS: Card[] = [
     icon: <FiBookOpen />,
     title: "E-books & Publications",
     desc: "Author support, developmental editing, formatting, cover design, and worldwide distribution — your story, beautifully shipped.",
-    href: "#ebooks", // Updated to link to the section ID on the page
-    img: "/assets/images/services/ebooks.jpg",
+    href: "/contact", // Updated to link to the section ID on the page
+    img: "/assets/images/ebooks.jpg",
     id: "ebooks", // Ensuring the section has this id
   },
   {
     icon: <FiGlobe />,
     title: "Digital Marketing",
     desc: "SEO, content, social, and paid campaigns that compound attention into measurable growth. Strategy → execution → optimization.",
-    href: "#marketing", // Updated to link to the section ID on the page
-    img: "/assets/images/services/marketing.jpg",
+    href: "/contact", // Updated to link to the section ID on the page
+    img: "/assets/images/marketing.jpg",
     id: "marketing", // Ensuring the section has this id
   },
   {
     icon: <FiCpu />,
     title: "Software Development",
     desc: "From MVP to scale — clean code, modern stacks, and seamless UX. Web apps, dashboards, and integrations that perform.",
-    href: "#software", // Updated to link to the section ID on the page
-    img: "/assets/images/services/software.jpg",
+    href: "/contact", // Updated to link to the section ID on the page
+    img: "/assets/images/software.jpg",
     id: "software", // Ensuring the section has this id
   },
   {
     icon: <FiCloud />,
     title: "IT Solutions",
     desc: "Cloud, security, automation, and 24/7 support. We simplify complexity and keep your systems reliable, secure, and fast.",
-    href: "#it", // Updated to link to the section ID on the page
-    img: "/assets/images/services/it.jpg",
+    href: "/contact", // Updated to link to the section ID on the page
+    img: "/assets/images/it.jpg",
     id: "it", // Ensuring the section has this id
   },
 ];
@@ -100,13 +100,14 @@ export default function Services() {
 
           {/* Hero banner image */}
           <div className="mt-10">
-            <div className="relative mx-auto aspect-[21/9] w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
+            <div className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
               <Image
-                src="/assets/images/hero-services.jpg" // replace with a wide hero
+                src="/assets/images/hero-services.jpg" // replace with a wide hero image
                 alt="Neonova services showcase"
-                fill
+                width={1200} // set the desired width
+                height={600} // set the desired height
                 sizes="(max-width: 1024px) 100vw, 1200px"
-                className="object-cover transition-transform duration-[2000ms] ease-out hover:scale-[1.03]"
+                className="object-cover transition-transform duration-200 ease-out" // removed hover zoom
                 priority
               />
               <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/5 rounded-3xl" />
@@ -221,21 +222,21 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {[
             {
-              src: "/assets/images/work/work-1.jpg",
+              src: "/assets/images/first.jpg",
               title: "Publishing Suite",
             },
             {
-              src: "/assets/images/work/work-2.jpg",
+              src: "/assets/images/second.jpg",
               title: "E-commerce Revamp",
             },
-            { src: "/assets/images/work/work-3.jpg", title: "SaaS Dashboard" },
-            { src: "/assets/images/work/work-4.jpg", title: "Brand + Website" },
+            { src: "/assets/images/third.jpg", title: "SaaS Dashboard" },
+            { src: "/assets/images/fourth.jpg", title: "Brand + Website" },
             {
-              src: "/assets/images/work/work-5.jpg",
+              src: "/assets/images/fifth.jpg",
               title: "Analytics Rollout",
             },
             {
-              src: "/assets/images/work/work-6.jpg",
+              src: "/assets/images/sixth.jpg",
               title: "Mobile Experience",
             },
           ].map((w) => (
@@ -267,7 +268,7 @@ export default function Services() {
           <div className="relative overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/50">
             <div className="relative aspect-[16/10]">
               <Image
-                src="/assets/images/process/collab.jpg"
+                src="/assets/images/process-2.jpg"
                 alt="Collaborative product and marketing workshop"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -360,21 +361,21 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {[
             {
-              avatar: "/assets/images/people/p1.jpg",
+              avatar: "/assets/images/p1.jpg",
               name: "Amira K.",
               role: "Publisher",
               quote:
                 "Their e-book pipeline took us from draft to worldwide distribution without friction.",
             },
             {
-              avatar: "/assets/images/people/p2.jpg",
+              avatar: "/assets/images/p2.jpg",
               name: "Zane P.",
               role: "CMO",
               quote:
                 "Campaigns finally aligned design, content, and data — the growth was obvious.",
             },
             {
-              avatar: "/assets/images/people/p3.jpg",
+              avatar: "/assets/images/p3.jpg",
               name: "Lena R.",
               role: "Founder",
               quote:
