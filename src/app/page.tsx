@@ -1,9 +1,10 @@
 import React from "react";
+import Hero from "./components/hero1";
 
 export default function Home() {
   return (
    <div>
-    Welcome to the Home Page
+    <Hero />
    </div>
   )
 }
