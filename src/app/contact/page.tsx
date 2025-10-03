@@ -2,7 +2,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import { FiMail, FiPhone, FiMapPin, FiArrowRight } from "react-icons/fi";
 
 const ACCENT = "#C6A15B";
@@ -74,11 +73,11 @@ const Contact = () => {
             </div>
             <div className="flex items-center gap-3 text-neutral-400">
               <FiMail className="text-[var(--accent)]" />
-              <span>info@neonexusllc.com</span>
+              <span>info@neonovallc.com</span>
             </div>
             <div className="flex items-center gap-3 text-neutral-400">
               <FiMapPin className="text-[var(--accent)]" />
-              <span>5900 Balcones Drive, STE 100, Austin, TX, 78731</span>
+              <span>21423 Baldovin Way Tomball, TX 77375-1928</span>
             </div>
           </div>
         </div>

@@ -151,15 +151,15 @@ export default function Footer() {
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <FiMail className="text-[var(--accent)]" />
                 <a
-                  href="mailto:info@neonexusllc.com"
+                  href="mailto:info@neonovallc.com"
                   className="hover:text-[var(--accent)] transition"
                 >
-                  info@neonexusllc.com
+                  info@neonovallc.com
                 </a>
               </li>
               <li className="flex items-start justify-center md:justify-start gap-2 text-neutral-400">
                 <FiMapPin className="mt-0.5 text-[var(--accent)]" />
-                <span>5900 Balcones Drive, STE 100, Austin, TX, 78731</span>
+                <span>21423 Baldovin Way Tomball, TX 77375-1928</span>
               </li>
             </ul>
 

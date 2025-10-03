@@ -97,7 +97,7 @@ export default function Landing() {
           <div className="mt-10">
             <div className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
               <Image
-                src="/assets/images/main-image5.avif" // replace with your image source
+                src="/assets/images/main-image4-2.jpg" // replace with your image source
                 alt="Showcase of Neonovallc work"
                 width={1200} // set the desired width
                 height={600} // set the desired height
@@ -157,25 +157,25 @@ export default function Landing() {
             icon={<FiBookOpen />}
             title="E-books & Publications"
             desc="Authoring, editing, layout, and global distribution that bring stories to life."
-            img="/assets/images/ebooks.jpg"
+            img="/assets/images/ebook-2.jpg"
           />
           <ServiceCard
             icon={<FiGlobe />}
             title="Digital Marketing"
             desc="SEO, content, and paid performance that compound attention into revenue."
-            img="/assets/images/marketing.jpg"
+            img="/assets/images/marketing-2.jpg"
           />
           <ServiceCard
             icon={<FiCpu />}
             title="Software Development"
             desc="From MVP to scale — clean code, modern stacks, and seamless UX."
-            img="/assets/images/software.jpg"
+            img="/assets/images/software-2.jpg"
           />
           <ServiceCard
             icon={<FiCloud />}
             title="IT Solutions"
             desc="Cloud, security, and infra that remove friction and grow with you."
-            img="/assets/images/it.jpg"
+            img="/assets/images/it-2.jpg"
           />
         </div>
       </section>
@@ -194,11 +194,11 @@ export default function Landing() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {[
             { src: "/assets/images/work-1.avif", title: "Publishing Suite" },
-            { src: "/assets/images/work-2.jpg", title: "E-commerce Revamp" },
-            { src: "/assets/images/work-3.jpg", title: "SaaS Dashboard" },
-            { src: "/assets/images/work-4.jpg", title: "Brand + Website" },
-            { src: "/assets/images/work-5.jpg", title: "Analytics Rollout" },
-            { src: "/assets/images/work-6.jpg", title: "Mobile Experience" },
+            { src: "/assets/images/work-2-2.jpg", title: "E-commerce Revamp" },
+            { src: "/assets/images/work-3-2.jpg", title: "SaaS Dashboard" },
+            { src: "/assets/images/work-4-2.jpg", title: "Brand + Website" },
+            { src: "/assets/images/work5-2.jpg", title: "Analytics Rollout" },
+            { src: "/assets/images/work-6-2.jpg", title: "Mobile Experience" },
           ].map((w) => (
             <figure
               key={w.src}
@@ -282,21 +282,21 @@ export default function Landing() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {[
             {
-              avatar: "/assets/images/p1.jpg",
+              avatar: "/assets/images/p1-2.jpg",
               name: "Amira K.",
               role: "Publisher",
               quote:
                 "Their e-book pipeline took us from draft to worldwide distribution without friction.",
             },
             {
-              avatar: "/assets/images/p2.jpg",
+              avatar: "/assets/images/p2-2.jpg",
               name: "Zane P.",
               role: "CMO",
               quote:
                 "Campaigns finally aligned design, content, and data — the growth was obvious.",
             },
             {
-              avatar: "/assets/images/p3.jpg",
+              avatar: "/assets/images/p3-2.jpg",
               name: "Lena R.",
               role: "Founder",
               quote:
@@ -372,10 +372,10 @@ export default function Landing() {
                 <FiArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
               <a
-                href="mailto:info@neonexusllc.com"
+                href="mailto:info@neonovallc.com"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl border border-[var(--accent)]/40 bg-neutral-900/60 px-5 py-3 font-semibold text-neutral-100 transition hover:border-[var(--accent)]/70 hover:shadow-[0_0_0_6px_rgba(198,161,91,0.12)]"
               >
-                info@neonexusllc.com
+                info@neonovallc.com
               </a>
             </div>
           </div>

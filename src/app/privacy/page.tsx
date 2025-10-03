@@ -185,10 +185,10 @@ const Privacy = () => {
             <li>
               Email:{" "}
               <a
-                href="mailto:info@neonexusllc.com"
+                href="mailto:info@neonovallc.com"
                 className="text-[var(--accent)]"
               >
-                info@neonexusllc.com
+                info@neonovallc.com
               </a>
             </li>
             <li>
@@ -197,7 +197,12 @@ const Privacy = () => {
                 +1 (213) 784-1841
               </a>
             </li>
-            <li>Address: 5900 Balcones Drive STE 100, Austin, Texas, 78731</li>
+            <li>
+              Address:{" "}
+              <span className="text-[var(--accent)]">
+              21423 Baldovin Way Tomball, TX 77375-1928
+              </span>
+            </li>
           </ul>
         </div>
       </section>

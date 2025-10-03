@@ -49,7 +49,7 @@ export default function About() {
           <div className="mt-10">
   <div className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
     <Image
-      src="/assets/images/hero-about.jpg" // replace with an appropriate hero image
+      src="/assets/images/hero-about-2.jpg" // replace with an appropriate hero image
       alt="Neonovallc company overview"
       width={1200} // set the desired width
       height={600} // set the desired height
@@ -85,15 +85,15 @@ export default function About() {
               description:
                 "Unlock boundless worlds with the turn of a page, where imagination knows no limits in digital display.",
               icon: <FiBookOpen />,
-              imgSrc: "/assets/images/one.jpg",
-              link: "/services/ebooks",
+              imgSrc: "/assets/images/ebook-3.jpg",
+              link: "/services/ebook",
             },
             {
               title: "Digital Marketing",
               description:
                 "Navigate the digital landscape with strategic precision, where every click echoes a brand's vision.",
               icon: <FiGlobe />,
-              imgSrc: "/assets/images/two.jpg",
+              imgSrc: "/assets/images/marketing-3.jpg",
               link: "/services/marketing",
             },
             {
@@ -101,7 +101,7 @@ export default function About() {
               description:
                 "Transforming lines of code into seamless solutions, software development bridges imagination with execution.",
               icon: <FiCpu />,
-              imgSrc: "/assets/images/three.jpg",
+              imgSrc: "/assets/images/software-2.jpg",
               link: "/services/software",
             },
             {
@@ -109,7 +109,7 @@ export default function About() {
               description:
                 "Harnessing innovation to untangle complexity, IT solutions pave the path for streamlined efficiency.",
               icon: <FiCloud />,
-              imgSrc: "/assets/images/four.jpg",
+              imgSrc: "/assets/images/it-3.jpg",
               link: "/services/it",
             },
           ].map((service) => (

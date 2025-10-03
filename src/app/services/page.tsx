@@ -27,7 +27,7 @@ const CARDS: Card[] = [
     title: "E-books & Publications",
     desc: "Author support, developmental editing, formatting, cover design, and worldwide distribution — your story, beautifully shipped.",
     href: "/contact", // Updated to link to the section ID on the page
-    img: "/assets/images/ebooks.jpg",
+    img: "/assets/images/ebook-2.jpg",
     id: "ebooks", // Ensuring the section has this id
   },
   {
@@ -35,7 +35,7 @@ const CARDS: Card[] = [
     title: "Digital Marketing",
     desc: "SEO, content, social, and paid campaigns that compound attention into measurable growth. Strategy → execution → optimization.",
     href: "/contact", // Updated to link to the section ID on the page
-    img: "/assets/images/marketing.jpg",
+    img: "/assets/images/marketing-2.jpg",
     id: "marketing", // Ensuring the section has this id
   },
   {
@@ -43,7 +43,7 @@ const CARDS: Card[] = [
     title: "Software Development",
     desc: "From MVP to scale — clean code, modern stacks, and seamless UX. Web apps, dashboards, and integrations that perform.",
     href: "/contact", // Updated to link to the section ID on the page
-    img: "/assets/images/software.jpg",
+    img: "/assets/images/software-2.jpg",
     id: "software", // Ensuring the section has this id
   },
   {
@@ -51,7 +51,7 @@ const CARDS: Card[] = [
     title: "IT Solutions",
     desc: "Cloud, security, automation, and 24/7 support. We simplify complexity and keep your systems reliable, secure, and fast.",
     href: "/contact", // Updated to link to the section ID on the page
-    img: "/assets/images/it.jpg",
+    img: "/assets/images/it-2.jpg",
     id: "it", // Ensuring the section has this id
   },
 ];
@@ -102,7 +102,7 @@ export default function Services() {
           <div className="mt-10">
             <div className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/40">
               <Image
-                src="/assets/images/hero-services.jpg" // replace with a wide hero image
+                src="/assets/images/hero-services-2.jpg" // replace with a wide hero image
                 alt="Neonova services showcase"
                 width={1200} // set the desired width
                 height={600} // set the desired height
@@ -361,21 +361,21 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {[
             {
-              avatar: "/assets/images/p1.jpg",
+              avatar: "/assets/images/p1-2.jpg",
               name: "Amira K.",
               role: "Publisher",
               quote:
                 "Their e-book pipeline took us from draft to worldwide distribution without friction.",
             },
             {
-              avatar: "/assets/images/p2.jpg",
+              avatar: "/assets/images/p2-2.jpg",
               name: "Zane P.",
               role: "CMO",
               quote:
                 "Campaigns finally aligned design, content, and data — the growth was obvious.",
             },
             {
-              avatar: "/assets/images/p3.jpg",
+              avatar: "/assets/images/p3-2.jpg",
               name: "Lena R.",
               role: "Founder",
               quote:
@@ -455,10 +455,10 @@ export default function Services() {
                 <FiArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
               <Link
-                href="mailto:info@neonexusllc.com"
+                href="mailto:info@neonovallc.com"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl border border-[var(--accent)]/40 bg-neutral-900/60 px-5 py-3 font-semibold text-neutral-100 transition hover:border-[var(--accent)]/70 hover:shadow-[0_0_0_6px_rgba(198,161,91,0.12)]"
               >
-                info@neonexusllc.com
+                info@neonovallc.com
               </Link>
             </div>
           </div>
