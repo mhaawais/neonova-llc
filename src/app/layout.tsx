@@ -51,6 +51,20 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <div className="w-full bg-[#0A0B0D] border-t border-neutral-800/60 px-4 py-5">
+          <p className="mx-auto max-w-5xl text-center text-[11px] sm:text-xs leading-relaxed text-neutral-500">
+            <span className="font-semibold text-neutral-400">Disclaimer:</span>{" "}
+            Elite Book Writers is owned by Neo Novallc LLC and operates as an
+            independent organisation and has no affiliation, partnership,
+            sponsorship, or association with any other company or brand that may
+            share a similar or identical name. This includes, but is not limited
+            to, well-known publishing companies or corporations. All content,
+            services, and products available on this website are exclusively
+            provided by Elite Book Writers and are not authorised, endorsed, or
+            approved by any third party. All trademarks are the property of
+            their respective owners.
+          </p>
+        </div>
       </body>
     </html>
   );

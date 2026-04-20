@@ -49,21 +49,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
           {/* Brand / About */}
           <div>
-            <Link
-              href="/"
-              className="mx-auto md:mx-0 flex items-center justify-center md:justify-start gap-3"
-            >
+            <div className="mx-auto md:mx-0 flex items-center justify-center md:justify-start gap-3">
               <div className="relative h-12 w-[200px]">
                 <Image
                   src="/assets/logo/neonova-logo.png"
-                  alt="Neonovallc"
+                  alt="Elite Book Writers"
                   fill
                   sizes="200px"
                   className="object-contain"
                   priority
                 />
               </div>
-            </Link>
+            </div>
             <p className="mt-4 text-sm leading-relaxed text-neutral-400">
               Neonovallc turns strategy and content into immersive digital
               products — from publishing pipelines to high-performing software,
@@ -183,6 +180,27 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-neutral-800 to-transparent" />
+
+        {/* Brands Associated With */}
+        <div className="mb-8 rounded-2xl bg-white px-6 py-6">
+          <p className="text-center text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-5">
+            Brands Associated With
+          </p>
+          <div className="flex items-center justify-center">
+            <div className="relative h-12 w-[180px]">
+              <Image
+                src="/assets/logo/Elite-logo.webp"
+                alt="Elite Book Writers"
+                fill
+                sizes="180px"
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="mb-8 h-px w-full bg-gradient-to-r from-transparent via-neutral-800 to-transparent" />
 
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">

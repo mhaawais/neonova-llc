@@ -55,6 +55,18 @@ export default function Header() {
 
   return (
     <>
+      {/* Ownership notice bar */}
+      <div
+        style={{ ["--accent" as any]: ACCENT }}
+        className="w-full bg-neutral-900 border-b border-[var(--accent)]/20 py-1.5 px-4 text-center"
+      >
+        <p className="text-xs sm:text-sm text-neutral-400 tracking-wide">
+          <span className="text-[var(--accent)] font-semibold">Elite Book Writers</span>{" "}
+          is owned by{" "}
+          <span className="text-neutral-200 font-semibold">Neo Novallc LLC</span>
+        </p>
+      </div>
+
       {/* Desktop Header for lg and above screens */}
       <header
         style={{ ["--accent" as any]: ACCENT }}
