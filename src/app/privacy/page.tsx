@@ -78,7 +78,7 @@ const Privacy = () => {
             <li>
               Clicking the “unsubscribe” link at the bottom of our emails.
             </li>
-            <li>Contacting us directly at info@neonexusllc.com.</li>
+            <li>Contacting us directly at info@neonovallc.com.</li>
           </ul>
           <p className="text-neutral-300">
             After opting out, you will no longer receive marketing
@@ -134,7 +134,7 @@ const Privacy = () => {
             <li>Request a copy of the personal information we hold.</li>
           </ul>
           <p className="text-neutral-300">
-            To exercise these rights, please contact us at info@neonexusllc.com.
+            To exercise these rights, please contact us at info@neonovallc.com.
           </p>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
@@ -185,10 +185,10 @@ const Privacy = () => {
             <li>
               Email:{" "}
               <a
-                href="mailto:info@neonexusllc.com"
+                href="mailto:info@neonovallc.com"
                 className="text-[var(--accent)]"
               >
-                info@neonexusllc.com
+                info@neonovallc.com
               </a>
             </li>
             <li>
@@ -197,7 +197,7 @@ const Privacy = () => {
                 +1 (213) 784-1841
               </a>
             </li>
-            <li>Address: 5900 Balcones Drive STE 100, Austin, Texas, 78731</li>
+            <li>Address: 21423 Baldovin Way Tomball, TX 77375</li>
           </ul>
         </div>
       </section>

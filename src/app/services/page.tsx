@@ -455,10 +455,10 @@ export default function Services() {
                 <FiArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
               <Link
-                href="mailto:info@neonexusllc.com"
+                href="mailto:info@neonovallc.com"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl border border-[var(--accent)]/40 bg-neutral-900/60 px-5 py-3 font-semibold text-neutral-100 transition hover:border-[var(--accent)]/70 hover:shadow-[0_0_0_6px_rgba(198,161,91,0.12)]"
               >
-                info@neonexusllc.com
+                info@neonovallc.com
               </Link>
             </div>
           </div>

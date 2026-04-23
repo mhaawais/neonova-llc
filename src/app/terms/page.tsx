@@ -208,11 +208,11 @@ const Terms = () => {
             </div>
             <div className="flex items-center gap-3 text-neutral-400">
               <FiMail className="text-[var(--accent)]" />
-              <span>info@neonexusllc.com</span>
+              <span>info@neonovallc.com</span>
             </div>
             <div className="flex items-center gap-3 text-neutral-400">
               <FiMapPin className="text-[var(--accent)]" />
-              <span>5900 Balcones Drive STE 100, Austin, TX, 78731</span>
+              <span>21423 Baldovin Way Tomball, TX 77375</span>
             </div>
           </div>
         </div>
