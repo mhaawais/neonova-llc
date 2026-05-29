@@ -142,7 +142,7 @@ export default function Footer() {
                   href="tel:+15075561700"
                   className="hover:text-[var(--accent)] transition"
                 >
-                  +1 (507) 556-1700
+                  +1 (346) 332-4804
                 </a>
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
