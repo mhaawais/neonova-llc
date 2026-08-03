@@ -53,7 +53,7 @@ export default function Footer() {
               <div className="relative h-12 w-[200px]">
                 <Image
                   src="/assets/logo/neonova-logo.png"
-                  alt="Elite Book Writers"
+                  alt="Neonova LLC"
                   fill
                   sizes="200px"
                   className="object-contain"
@@ -187,15 +187,21 @@ export default function Footer() {
             Brands Associated With
           </p>
           <div className="flex items-center justify-center">
-            <div className="relative h-12 w-[180px]">
+            <a
+              href="https://americanbookfounders.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit American Book Founders"
+              className="relative block h-12 w-[180px]"
+            >
               <Image
-                src="/assets/logo/Elite-logo.webp"
-                alt="Elite Book Writers"
+                src="/assets/logo/abf-logo.jpeg"
+                alt="American Book Founders"
                 fill
                 sizes="180px"
                 className="object-contain"
               />
-            </div>
+            </a>
           </div>
         </div>
 
