@@ -70,7 +70,7 @@ const Contact = () => {
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-10">
             <div className="flex items-center gap-3 text-neutral-400">
               <FiPhone className="text-[var(--accent)]" />
-              <span>+1 (507) 556-1700</span>
+              <span>+1 (346) 332-4804</span>
             </div>
             <div className="flex items-center gap-3 text-neutral-400">
               <FiMail className="text-[var(--accent)]" />

@@ -131,7 +131,7 @@ export default function Header() {
                 className="inline-flex items-center gap-2 rounded-xl border border-[var(--accent)]/25 bg-neutral-900/60 px-3.5 py-2 text-sm xl:text-base text-neutral-100 transition-all hover:border-[var(--accent)]/50 hover:shadow-[0_0_0_4px_rgba(198,161,91,0.12)]"
               >
                 <FiPhone className="text-[var(--accent)]" />
-                <span className="font-semibold">+1 (507) 556-1700</span>
+                <span className="font-semibold">+1 (346) 332-4804</span>
               </a>
               <a
                 href="mailto:info@neonovallc.com"
@@ -255,7 +255,7 @@ export default function Header() {
                 className="flex items-center gap-3 rounded-xl border border-[var(--accent)]/25 bg-neutral-900/70 px-4 py-3 text-neutral-100 transition hover:border-[var(--accent)]/50"
               >
                 <FiPhone className="text-[var(--accent)]" />
-                <span className="font-semibold">+1 (507) 556-1700</span>
+                <span className="font-semibold">+1 (346) 332-4804</span>
               </a>
               <a
                 href="mailto:info@neonovallc.com"
